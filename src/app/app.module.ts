@@ -9,6 +9,7 @@ import { AuthService } from 'src/app/shared/auth.service';
 import { AuthGuardService } from 'src/app/shared/auth-guard.service';
 import { AdminComponent } from './admin/admin.component';
 import { RoleComponent } from './admin/role/role.component';
+import { UserComponent } from './admin/user/user.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { RoleComponent } from './admin/role/role.component';
     HomeComponent,
     SupportComponent,
     AdminComponent,
-    RoleComponent
+    RoleComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,

@@ -4,6 +4,7 @@ import { HomeComponent } from 'src/app/home/home.component';
 import { SupportComponent } from 'src/app/support/support.component';
 import { AuthGuardService } from 'src/app/shared/auth-guard.service';
 import { AdminComponent } from 'src/app/admin/admin.component';
+import { RoleComponent } from "src/app/admin/role/role.component";
 
 const routes: Routes = [
   {
@@ -24,8 +25,8 @@ const routes: Routes = [
           path: '',
           canActivateChild: [AuthGuardService],
           children: [
-              { path: 'user', component: AdminComponent },
-              { path: 'role', component: AdminComponent }
+              { path: 'user', component: UserComponent },
+              { path: 'role', component: RoleComponent }
           ]
       }
   ]
