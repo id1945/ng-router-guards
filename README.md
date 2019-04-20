@@ -105,3 +105,5 @@ export class AuthService {
   }
 }
 ```
+
+#### https://giai-ma.blogspot.com/2018/11/deploying-angular-app-to-github-pages.html
