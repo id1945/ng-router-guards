@@ -30,7 +30,7 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJhZG1pbi5jb21wb25lbnQuY3NzIn0= */"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkbWluL2FkbWluLmNvbXBvbmVudC5jc3MifQ== */"
 
 /***/ }),
 
@@ -86,7 +86,7 @@ var AdminComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJyb2xlL3JvbGUuY29tcG9uZW50LmNzcyJ9 */"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkbWluL3JvbGUvcm9sZS5jb21wb25lbnQuY3NzIn0= */"
 
 /***/ }),
 
@@ -142,7 +142,7 @@ var RoleComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJ1c2VyL3VzZXIuY29tcG9uZW50LmNzcyJ9 */"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkbWluL3VzZXIvdXNlci5jb21wb25lbnQuY3NzIn0= */"
 
 /***/ }),
 
@@ -231,16 +231,22 @@ var routes = [
     },
     {
         path: 'admin',
-        component: src_app_admin_admin_component__WEBPACK_IMPORTED_MODULE_6__["AdminComponent"],
         canActivate: [src_app_shared_auth_guard_service__WEBPACK_IMPORTED_MODULE_5__["AuthGuardService"]],
         children: [
             {
                 path: '',
                 canActivateChild: [src_app_shared_auth_guard_service__WEBPACK_IMPORTED_MODULE_5__["AuthGuardService"]],
-                children: [
-                    { path: 'user', component: src_app_admin_user_user_component__WEBPACK_IMPORTED_MODULE_8__["UserComponent"] },
-                    { path: 'role', component: src_app_admin_role_role_component__WEBPACK_IMPORTED_MODULE_7__["RoleComponent"] }
-                ]
+                component: src_app_admin_admin_component__WEBPACK_IMPORTED_MODULE_6__["AdminComponent"]
+            },
+            {
+                path: 'user',
+                canActivateChild: [src_app_shared_auth_guard_service__WEBPACK_IMPORTED_MODULE_5__["AuthGuardService"]],
+                component: src_app_admin_user_user_component__WEBPACK_IMPORTED_MODULE_8__["UserComponent"]
+            },
+            {
+                path: 'role',
+                canActivateChild: [src_app_shared_auth_guard_service__WEBPACK_IMPORTED_MODULE_5__["AuthGuardService"]],
+                component: src_app_admin_role_role_component__WEBPACK_IMPORTED_MODULE_7__["RoleComponent"]
             }
         ]
     }
@@ -268,7 +274,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".active {\r\n  color: red;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL2FwcC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsVUFBVTtBQUNaIiwiZmlsZSI6Ii4uL2FwcC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmFjdGl2ZSB7XHJcbiAgY29sb3I6IHJlZDtcclxufVxyXG4iXX0= */"
+module.exports = ".active {\r\n  color: red;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxVQUFVO0FBQ1oiLCJmaWxlIjoic3JjL2FwcC9hcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5hY3RpdmUge1xyXG4gIGNvbG9yOiByZWQ7XHJcbn1cclxuIl19 */"
 
 /***/ }),
 
@@ -279,7 +285,7 @@ module.exports = ".active {\r\n  color: red;\r\n}\r\n\r\n/*# sourceMappingURL=da
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav>\r\n  <a routerLink=\"/home\" routerLinkActive=\"active\">Home</a><br/>\r\n  <a routerLink=\"/support\" routerLinkActive=\"active\">Support</a><br/>\r\n  <a routerLink=\"/admin\" routerLinkActive=\"active\">Admin</a> |\r\n  <a routerLink=\"/admin/user\" routerLinkActive=\"active\">User</a> |\r\n  <a routerLink=\"/admin/role\" routerLinkActive=\"active\">Role</a>\r\n</nav>\r\n<router-outlet></router-outlet>\r\n\r\n<h3>Guards bảo về routes</h3>\r\n<a href=\"https://giai-ma.blogspot.com/2019/04/guards-routes-angular-2.html\">Xem thêm về Guards</a>"
+module.exports = "<nav>\r\n  <a routerLink=\"/home\" routerLinkActive=\"active\">Home</a><br/>\r\n  <a routerLink=\"/support\" routerLinkActive=\"active\">Support</a><br/>\r\n  <a routerLink=\"/admin\" routerLinkActive=\"active\">Admin</a> |\r\n  <a routerLink=\"/admin/user\" routerLinkActive=\"active\">User</a> |\r\n  <a routerLink=\"/admin/role\" routerLinkActive=\"active\">Role</a>\r\n</nav>\r\n<router-outlet></router-outlet>\r\n\r\n<hr/>\r\n<h2>Guards bảo về routes</h2>\r\n<a href=\"https://giai-ma.blogspot.com/2019/04/guards-routes-angular-2.html\">Xem thêm về Guards</a>"
 
 /***/ }),
 
@@ -387,7 +393,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuLi9ob21lL2hvbWUuY29tcG9uZW50LmNzcyJ9 */"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2hvbWUvaG9tZS5jb21wb25lbnQuY3NzIn0= */"
 
 /***/ }),
 
@@ -524,7 +530,7 @@ var AuthService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuLi9zdXBwb3J0L3N1cHBvcnQuY29tcG9uZW50LmNzcyJ9 */"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3N1cHBvcnQvc3VwcG9ydC5jb21wb25lbnQuY3NzIn0= */"
 
 /***/ }),
 
