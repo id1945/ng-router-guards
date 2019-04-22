@@ -112,10 +112,11 @@ export class AuthService {
 }
 ```
 
+### Guards bảo về routes cho từng url
+
 ```
 /************* ng g s guards/roleGuard --spec false *************/
 ```
-##### Giới thiệu thêm chức nawng Guards bảo về routes cho từng url
 
 ```javascript
 import { AuthService } from './../services/auth.service';
